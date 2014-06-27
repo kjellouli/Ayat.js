@@ -17,7 +17,6 @@
 ##Dependencies
 * [jQuery 1.8.3+](http://code.jquery.com/jquery-1.11.0.min.js)
 * [IcoMoon](http://icomoon.io/) - Icons such as play/pause, verse details, share...
-* [html5preloader](https://github.com/jussi-kalliokoski/html5Preloader.js) - HTML5 audio preloading is used to prevent audio cutting between multiple verses
 
 ---
 
@@ -199,7 +198,7 @@ The full CSS stylesheet can be found in the repository or downloaded by [clickin
 * [GlobalQuran](http://globalquran.com) - Browse, Search, and Listen to the Holy Quran. With accurate quran text and quran translations in various languages.
 * [Everyayah](http://everyayah.com) - Verse By Verse Quran Audio Files.
 * [Quran Indexing](http://www.searchtruth.com/quran_topics_index.php) - Complete indexing of Quran Topics from A to Z.
-* [Verse Border Image](https://www.flickr.com/photos/martinlatter/sets/72157612793274058/detail/)
+* [Verse Border Image](https://www.flickr.com/photos/martinlatter/sets/72157612793274058/detail/) - Image showing islamic mosaic pattern around verses
 
 ---
 
@@ -207,6 +206,28 @@ The full CSS stylesheet can be found in the repository or downloaded by [clickin
 
 Ayat.js is freely distributable under the 
 terms of an MIT-style [license](https://github.com/kjellouli/Ayat.js/blob/master/license.txt).
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Kamal Jellouli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ---
 
@@ -218,4 +239,4 @@ Kamal Jellouli / [kamaljellouli.com](http://kamaljellouli.com/)
 
 ##Notes
 
-The website [quranindex.info](http://quranindex.info) I developed was built using the Ayat.js plugin
+[quranindex.info](http://quranindex.info) was developed using the Ayat.js plugin
