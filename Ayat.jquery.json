@@ -1,7 +1,7 @@
 {
     "name": "Ayat",
-    "title": "Ayat.js",
-    "description": "Generate Qur'anic Verses by Topics, Languages, Reciters and other Options",
+    "title": "Ayat.js - Quranic Verses Plugin",
+    "description": "Generate Quranic Verses by Topics, Languages, Reciters and other Options",
     "keywords": [
         "quran",
         "index",
@@ -12,7 +12,7 @@
         "verses",
         "social"
     ],
-    "version": "0.1.5",
+    "version": "0.1.6",
     "author": {
         "name": "Kamal Jellouli"
     },
