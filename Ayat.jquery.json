@@ -12,7 +12,7 @@
         "verses",
         "social"
     ],
-    "version": "0.1.4",
+    "version": "0.1.5",
     "author": {
         "name": "Kamal Jellouli"
     },
@@ -30,8 +30,8 @@
         }
     ],
     "bugs": "https://github.com/kjellouli/Ayat.js/issues",
-    "homepage": "https://github.com/kjellouli/Ayat.js",
-    "docs": "https://github.com/kjellouli/Ayat.js",
+    "homepage": "http://kjellouli.github.io/Ayat.js",
+    "docs": "http://kjellouli.github.io/Ayat.js/",
     "download": "https://github.com/kjellouli/Ayat.js/archive/master.zip",
     "dependencies": {
         "jquery": ">=1.8.3",
