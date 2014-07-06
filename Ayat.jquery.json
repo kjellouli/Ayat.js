@@ -12,7 +12,7 @@
         "verses",
         "social"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "author": {
         "name": "Kamal Jellouli"
     },
@@ -34,6 +34,7 @@
     "docs": "https://github.com/kjellouli/Ayat.js",
     "download": "https://github.com/kjellouli/Ayat.js/archive/master.zip",
     "dependencies": {
-        "jquery": ">=1.8.3"
+        "jquery": ">=1.8.3",
+        "icomoon": ">=1.0.0"
     }
 }
