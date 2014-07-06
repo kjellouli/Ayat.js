@@ -4,6 +4,12 @@
     "description": "Generate Quranic Verses by Topics, Languages, Reciters and other Options",
     "keywords": [
         "quran",
+        "islam",
+        "muslim",
+        "arabic",
+        "search",
+        "translation",
+        "quranic",
         "index",
         "ayat",
         "topics",
@@ -12,7 +18,7 @@
         "verses",
         "social"
     ],
-    "version": "0.1.6",
+    "version": "0.1.7",
     "author": {
         "name": "Kamal Jellouli"
     },
