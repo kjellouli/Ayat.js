@@ -233,10 +233,10 @@ SOFTWARE.
 
 ##Author
 
-Kamal Jellouli / [kamaljellouli.com](http://kamaljellouli.com/)
+Kamal Jellouli
 
 ---
 
 ##Notes
 
-[quranindex.info](http://quranindex.info) was developed using the Ayat.js plugin
+[Quranindex.info](http://quranindex.info) was developed using the Ayat.js plugin
