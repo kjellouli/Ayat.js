@@ -30,7 +30,7 @@ Html:
 Javascript:
 ```javascript
     $("#container").Ayat({
-	    topic: 'women',
+	    theme: 'women',
 	    reciter: 'shuraym',
 	    lang: 'fr',
  	    delay: '5',
