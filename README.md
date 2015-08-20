@@ -64,7 +64,7 @@ The full CSS stylesheet can be found in the repository or downloaded by [clickin
         <tr>
             <td>theme</td>
             <td>'prayer'</td>
-            <td>Theme name e.g. abraham, charity, jesus, prayer... Mutliple topics can be triggered by separating them with comma</td>
+            <td>Theme name e.g. abraham, charity, jesus, prayer... Mutliple themes can be triggered by separating them with comma</td>
         </tr>
         <tr>
             <td>lang</td>
