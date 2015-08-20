@@ -62,9 +62,9 @@ The full CSS stylesheet can be found in the repository or downloaded by [clickin
     </thead>
     <tbody>
         <tr>
-            <td>topic</td>
+            <td>theme</td>
             <td>'prayer'</td>
-            <td>Topic name e.g. abraham, charity, jesus, prayer... Mutliple topics can be triggered by separating them with comma</td>
+            <td>Theme name e.g. abraham, charity, jesus, prayer... Mutliple topics can be triggered by separating them with comma</td>
         </tr>
         <tr>
             <td>lang</td>
@@ -127,7 +127,7 @@ The full CSS stylesheet can be found in the repository or downloaded by [clickin
 ---
 
 ##Lists
-- A topic can be chosen from the following list by making it lower case and concatenating with underscore terms separated by white space, _e.g. Jesus => jesus, Queen Sheba => queen\_sheba_
+- A theme can be chosen from the following list by making it lower case and concatenating with underscore terms separated by white space, _e.g. Jesus => jesus, Queen Sheba => queen\_sheba_
 
 ####_Topics_
 > Aad, Aaron, Ablution, Abraham, Abrogation, Abu Lahab, Acacia, Adam, Adultery, Adversity, Aging, Ahmad, Al Imran, Al Medinah, Al Rass, Alcohol, Allah, Allah Mockery, Alliances, Angels, Anger, Ants, Apes, Apostasy, Arabic Quran, Arguments/Attacks, Ark, Armor, Astronomy, Atoms, Ayub, Azar, Baal, Badr, Bakkah, Beasts, Bedouin, Bees, Behavior, Belief, Believers, Bible, Biology, Birds, Booty, Borders, Botany, Builders, Burden, Burial, Business, Byzantines, Cain Abel, Calendar, Canaan, Captives, Cattle, Celestial Mechanics, Charity, Chastity, Children, Children of Israel, Christians, Churches, Clothing, Clouds, Commandments, Conservation, Constellations, Contract Law, Corruption, Cosmology Universe, Covenants, Creation, Creatures, Crystal, Danger, Date Palms, Dates, David, Day, Death, Deities Allah, Devil, Dhul-Qarnayn, Disbelievers, Disbelievers Muhammad, Disciples, Divers, Diversity, Divorce, Dogs, Donkeys, Drugs, Earth, Earth Rotation, Earthquake, Elephant, Elijah, Elisha, Embryology, Evolution, Ezra, Family, Fasting, Fighting, Figs, Fire, Flood, Food, Forgetting, Fornication, Friends, Future, Gabriel, Gambling, Pre-Islamic Arabian Deities, Gog Magog, Gold, Golden Armlets, Golden Calf, Goliath, Gospel, Government, Grain, Grave, Greed, Greetings, Guardianship, Hagar Ishmael, Hajj, Haman, Harut and Marut, Health, Hearing, Heaven, Hell, Homosexuality, Honey, Horses, Houries, Housing, Hud, Humankind, Hunayn, Hunting, Hydrology, Hypocrites, Iblis, Idolatry, Idris, Immorality, Imposters, Inheritance, In sha' Allah, Interest Loans, Intoxicants, Iram of the Pillars, Iron, Isaac, Ishmael, Jacob, Jesus, Jews, Jihad, Jinn, Job, John Baptist (Yahya), Jonah, Jordan, Joseph, Judgement, Kaaba, Killing, Knowledge, Kufr, Language, Laws Allah and Prophet, Life, Lightning, Lion, Literacy, Litigants, Livestock, Locusts, Lot, Lote Tree, Luqman, Madyan, Magians, Manna, Marriage, Mary, Materialism, Mecca, Menstruation, Metallurgy, Milk, Mineralogy, Monastic, Monks, Months, Moon, Moses, Mosque, Motion Universe, Mountains, Muhammad, Mules, Native Peoples, Necessity, Nepotism, Night, Noah, Nuclear, Oaths, Old Testament, Olive, Oppression, Orbiting Solar, Orphans, Parables, Patience, Patriarchy, Pearls, Pen, Persecuted, Persecutors, Pharaoh, Piety, Planets, Poets, Pollution, Pomegranates, Prayer, Prayer Times, Pregnancy, Privacy, Prophet, Prostration, Psalms, Qarun, Quail, Queen Sheba, Quran, Quraysh, Rabbi, Rain, Ramadan, Record, Red Sea, Refugees, Religion, Religious, Resurrection, Revelation, Ruby, Sabbath, Sabians, Sacrifice, Safa Al Marwah, Salih, Samaritan, Saul, Sea, Sects, Sex, Sex Conception, Sexes, Sexes Equality, Sheba, Ships, Shuayb, Sight, Silk, Silver, Sin, Sinai, Sirius, Skin, Sky, Slaves, Solomon, Sorcery, Spider, Spirit Hearings, Spouses, Stars, Stealing, Storms, Sun, Sunrise, Sunset, Swine, Synagogues, Tabuk, Ten Commandments, Thamud, Thunder, Time, Torah, Treachery, Tree Zaqqum, Trees, Trinity, Tubba, Twelve Tribes, Uhud, Usury, Water, Weather, Widows, Wills, Wind, Wine, Women, Wools, Wrong Customs, Zachariah.
