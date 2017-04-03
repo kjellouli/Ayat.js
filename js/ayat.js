@@ -1,6 +1,6 @@
-/* Ayat.js - Quranic Verses jQuery Plugin
+/*! Ayat.js - Quranic Verses jQuery Plugin
  * A plugin for Quranic verses by topics, language, reciter, and other options
- * version 1.0, February 8th, 2014
+ * version 1.0.2, February 8th, 2014
  * by Kamal Jellouli
  */
 (function ($) {
@@ -24,7 +24,7 @@
         var plugin = this;
 
         // Show debug messages
-        var debug = 1;
+        var debug = 0;
 
         // Default and user-provided options
         plugin.settings = {}
@@ -70,6 +70,9 @@
             } else
                 plugin.settings.audio = 0;
 
+            // Lowercase theme
+            plugin.settings.theme = plugin.settings.theme.toLowerCase();
+
             // Set CSS of sourat name depending on lang and font size
             if (plugin.settings.lang != "quran-simple")
                 souratname_css += "left:-5px;text-align:right;font-size:" + 0.82608695652 * plugin.settings.fontSize + "px";
@@ -83,7 +86,7 @@
             // Get Ayat if theme exist
             var themeExist = 1;
             try {
-                eval(plugin.settings.theme);
+                eval(topics[plugin.settings.theme]);
             } catch (e) {
                 var themeExist = 0;
             }
@@ -93,7 +96,7 @@
                 _showRandomVerse(souratname_css);
 
             // Change verse every settings.delay mn if there are more than one verse in theme
-            if (eval(plugin.settings.theme).length > 2 && plugin.settings.delay)
+            if (topics[plugin.settings.theme].length > 2 && plugin.settings.delay)
                 setInterval(function () {
                     _changeVerse(souratname_css)
                 }, plugin.settings.delay * 1000);
@@ -221,7 +224,7 @@
             var details = plugin.settings.details;
             var mailto = plugin.settings.mailto;
             var reciter = plugin.settings.reciter;
-            var verses = eval(plugin.settings.theme);
+            var verses = topics[plugin.settings.theme];
 
             // Store sourat name for multiple ayat to show only once
             var sourat_name = "";
@@ -229,8 +232,8 @@
             // Set sourat name in arabic or english for other languages
             var souratname_lang = (lang == "quran-simple") ? "arabic_name" : "english_name";
 
-            // get random verse different from 0 because it contains theme name
-            var verse = verses[Math.floor((Math.random() * (verses.length - 1)) + 1)];
+            // get random verse
+            var verse = verses[Math.floor((Math.random() * (verses.length - 1)))];
 
             // Split chapter and ayat #
             var chapterNumber = verse.split(":")[0];
@@ -458,7 +461,7 @@
 
             // options for multiple ayat
             if (isMultipleAyat) {
-                ayaFrom = params.ayaFrom + "-" + params.ayaTo;
+                ayaFrom = params.ayaFrom + "/" + params.ayaTo;
                 ayaNb = ""; // dont include in mailto since ayaContent already include ayat #s
                 ayatToPlay = params.ayaFrom + ", " + params.ayaTo + ", 1";
                 ayaContent = ayaContent.replace(/<span>|<\/span>/g, " ");
@@ -466,9 +469,9 @@
 
             // set options
             if (facebook)
-                $("#aya-options").append('<li><a title="Share on Facebook" alt="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://quran.com/' + souratNb + '/' + ayaFrom + '&t=Quran - ' + souratName + ' ' + ayaFrom + '"><div class="icon-container share-icons"><span id="icon-facebook" class="icon" style="float:right;"></span></div></a></li>');
+                $("#aya-options").append('<li><a title="Share on Facebook" alt="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://quranindex.info/surah/' + souratNb + '/' + ayaFrom + '&t=Quran - ' + souratName + ' ' + ayaFrom + '"><div class="icon-container share-icons"><span id="icon-facebook" class="icon" style="float:right;"></span></div></a></li>');
             if (twitter)
-                $("#aya-options").append('<li><a title="Share on Twitter" alt="Share on Twitter" target="_blank" href="http://twitter.com/home?status=Quran - ' + encodeURIComponent(souratName) + ' ' + ayaFrom + ' @ http://quran.com/' + souratNb + '/' + ayaFrom + '&t=Quran - ' + souratName + ' ' + ayaFrom + '"><div class="icon-container share-icons"><span id="icon-twitter" class="icon" style="float:right;"></span></div></a></li>');
+                $("#aya-options").append('<li><a title="Share on Twitter" alt="Share on Twitter" target="_blank" href="http://twitter.com/home?status=Quran - ' + encodeURIComponent(souratName) + ' ' + ayaFrom + ' @ http://quranindex.info/surah/' + souratNb + '/' + ayaFrom + '&t=Quran - ' + souratName + ' ' + ayaFrom + '"><div class="icon-container share-icons"><span id="icon-twitter" class="icon" style="float:right;"></span></div></a></li>');
             if (mailto)
                 $("#aya-options").append('<li><a title="Email Verse" alt="Email Verse" href="mailto:?subject=Quran - ' + souratName + ' ' + ayaFrom + '&body=' + ayaContent + " " + ayaNb + '"><div class="icon-container share-icons"><span id="icon-mailto" class="icon" style="float:right;"></span></div></a></li>');
 
@@ -479,9 +482,15 @@
             }
 
             if (details)
-                $("#aya-options").append('<li><a nohref title="Get Verse Details" alt="Get Verse Details" target="_blank" href="http://quran.com/' + souratNb + '/' + ayaFrom + '"><div class="icon-container"><span id="icon-info" class="icon" style="float:right"></span></div></a></li>');
+                $("#aya-options").append('<li><a nohref title="Get Verse Details" alt="Get Verse Details" target="_blank" href="http://quranindex.info/surah/' + souratNb + '/' + ayaFrom + '"><div class="icon-container"><span id="icon-info" class="icon" style="float:right"></span></div></a></li>');
             if (audio)
                 $("#aya-options").append('<li><audio id="audio_player"><source src="" type="audio/mp3" ></audio><a title="Play Aya" alt="Play Aya" onclick="$(\'#' + element + '\').data(\'Ayat\').playAudio(' + souratNb + ', ' + ayatToPlay + ')"><div class="icon-container"><span id="icon-play" class="icon" style="float:right"></span></div></a></li>');
+
+            _setFooter();
+        }
+
+        var _setFooter = function(){
+            $("<span class='qi-link' style='width:"+plugin.settings.width+"px'>Powered by <a target='_blank' href='http://quranindex.info'>Quranindex.info</a></span>").insertAfter(element);
         }
 
         // Invoke constructor

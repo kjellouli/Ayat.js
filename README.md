@@ -6,7 +6,7 @@
 ##Description
 **Ayat.js** is a jQuery plugin to embed into your website to show Qur'anic verses by choosing among a list of:
 
-* **_700+_** Topics
+* **_800+_** Topics
 * **_15_** Reciters
 * Verses Translation in **_40_** Languages
 * Styling Options: Font-size, Width, Height, Theme...

@@ -18,15 +18,15 @@
         "verses",
         "social"
     ],
-    "version": "0.1.7",
+    "version": "1.0.2",
     "author": {
         "name": "Kamal Jellouli"
     },
     "maintainers": [
         {
             "name": "Kamal Jellouli",
-            "email": "k_jellouli@hotmail.com",
-            "url": "http://kamaljellouli.com"
+            "email": "suggestions@quranindex.info",
+            "url": "http://quranindex.info"
         }
     ],
     "licenses": [

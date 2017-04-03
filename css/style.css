@@ -143,6 +143,13 @@ cursor:pointer;
   	border: 1px solid rgba(197, 186, 178, 1);  	
 	background:#fff;
 }
+.qi-link{
+	font-size: 11px;
+	margin: 5px auto 0px auto;
+	display:block;
+	color: grey;
+	text-align: right;
+}
 .slide-right:nth-child(1){
 -webkit-animation: animright ease-in-out 2s; 
 }
