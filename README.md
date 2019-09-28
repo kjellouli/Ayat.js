@@ -205,7 +205,7 @@ The full CSS stylesheet can be found in the repository or downloaded by [clickin
 ## License
 
 Ayat.js is freely distributable under the 
-terms of an MIT-style [license](https://github.com/kjellouli/Ayat.js/blob/master/license.txt).
+terms of an MIT-style [license](https://github.com/kjellouli/Ayat.js/blob/master/LICENSE.md).
 
 The MIT License (MIT)
 
